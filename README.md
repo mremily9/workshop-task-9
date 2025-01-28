@@ -131,8 +131,16 @@ I wanted to add in more implementations then. Using a slider to affect the filte
 
 ![image](https://github.com/user-attachments/assets/1dd836f9-37a6-49b1-b688-5a3d159e7d7c)
 
+
+I made sure to flip the camera so that it was a 'true' mirror experience 
+
 ```
 webcam = createCapture(VIDEO, { flipped:true });
+```
+
+I also added jitter effect by adding in a jitter variable that creates a random int and then move each of the rectangles to the jitter 
+```
+rect(x + jitter, y + jitter, scale, scale);
 ```
 
 **Final coding comments**
